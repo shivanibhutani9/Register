@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fafafa"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:context="project.register.MainActivity">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_weight="0.10"
+        android:paddingLeft="10dp"
+        android:paddingRight="2dp"
+        android:text="@string/filldetails"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        android:typeface="serif" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="310dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="0.53"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/fName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="0.1"
+            android:background="@android:color/background_light"
+            android:fontFamily="serif"
+            android:hint="First Name"
+            android:inputType="textPersonName"
+            android:paddingLeft="10dp"
+            android:selectAllOnFocus="false"
+            android:shadowColor="#d3d3d3"
+            android:shadowRadius="2"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="19sp" />
+
+
+        <EditText
+            android:id="@+id/lName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="0.10"
+            android:background="@android:color/background_light"
+            android:fontFamily="serif"
+            android:hint="Last Name"
+            android:inputType="textPersonName"
+            android:paddingLeft="10dp"
+            android:selectAllOnFocus="false"
+            android:shadowColor="#d3d3d3"
+            android:shadowRadius="2"
+            android:textColor="@android:color/darker_gray" />
+
+        <EditText
+            android:id="@+id/age"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="0.10"
+            android:background="@android:color/background_light"
+            android:fontFamily="serif"
+            android:hint="Age"
+
+            android:inputType="number"
+            android:paddingLeft="10dp"
+            android:selectAllOnFocus="false"
+            android:shadowColor="#d3d3d3"
+            android:shadowRadius="2"
+            android:textColor="@android:color/darker_gray" />
+
+        <EditText
+            android:id="@+id/dateofbirth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="0.10"
+            android:background="@android:color/background_light"
+            android:fontFamily="serif"
+            android:paddingLeft="10dp"
+
+            android:selectAllOnFocus="false"
+            android:shadowColor="#d3d3d3"
+            android:shadowRadius="2"
+            android:hint="Date of Birth (dd-mm-yyyy)"
+            android:textColor="@android:color/darker_gray" />
+
+        <EditText
+            android:id="@+id/mail_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="0.10"
+            android:background="@android:color/background_light"
+            android:ems="10"
+            android:fontFamily="serif"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="10dp"
+            android:selectAllOnFocus="false"
+            android:shadowColor="#d3d3d3"
+            android:shadowRadius="2"
+            android:hint="E-mail id"
+            android:textColor="@android:color/darker_gray" />
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:background="#e4e4e4"
+        android:elevation="1dp"
+        android:hint="Register"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/error"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/blankField"
+        android:textSize="18sp"
+        android:typeface="serif"
+        android:layout_marginTop="5dp"
+        android:paddingLeft="20dp"
+        android:visibility="invisible"
+        android:textColor="#ff0000"/>
+
+    <!--
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.074" />
+-->
+</LinearLayout>
